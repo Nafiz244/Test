@@ -1,0 +1,112 @@
+
+/* Theming CSS */
+
+
+
+
+
+
+
+
+
+  /* Branding logo */
+  .header__titleicon.u-org--titleicon {
+    max-width: 120px;
+  }
+  @media (min-width: 370px) {
+    .header__titleicon.u-org--titleicon {
+      max-width: 160px;
+    }
+  }
+  .u-org--titleicon + .header__titletext,
+  .u-org--titleicon + .sidemenu__titletext {
+    display: none;
+  }
+  .u-org--header .header__titlelink {
+    text-overflow: clip;
+  }
+
+  /* Custom CSS */
+  exceed-remove-item.activitylistitem__drop {
+  display: none;
+}
+
+form.button_to {
+  display: none;
+}
+
+button.librarylist__dropbutton {
+  display: none;
+}
+
+.user-profile-edit.company-form h3,
+.user-profile-edit.company-form .u-headingpage {
+	font-size: 20px;
+	font-weight: 600;
+        color: #00bcd4
+}
+
+a[href="/student/catalog/list?course_type=required"] { display: none !important; }
+
+body#google-ui { background-color: #FAFAFA; }
+select, body#google-ui select { background-color: #FFF; }
+
+.button.passfail {
+    font-size: 17px; 
+    background-color: #00BCD4;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 8px;
+}
+
+.button.custombutton {
+ text-transform: none;
+background-color: #FAFAFA;
+}
+
+passfail:hover,
+passfail:focus,
+.passfail:hover,
+.passfail:focus {
+    background-color: #0097A7; 
+}
+
+#notifications img {display: none;}
+#notification-count {display: none;}
+body.new_student #user-name.beta {right: 130px;}
+
+@media (max-width:700px) {
+  .assmntreport__details {
+    display:block;
+    float: none;
+  }
+}
+  
+  .fail_img {
+    max-width: 250px;
+  }
+
+
+  .button.passfail {
+    display:block;
+    width: 250px;
+  }
+  .assmntreport__heading  {
+font-size: 16px;
+}
+
+ 
+
+/* Temporary to hide search icon */
+.header__group--right .header__btn[data-behavior="toggle.search"] {
+  display: none !important;
+}
+@media (max-width: 1024px) {
+  .header__group--right .header__btn[data-behavior="toggle.search"] {
+    display: inline-block !important;
+  }
+}
+
+#response_section_details{display: none;}
+

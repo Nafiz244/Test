@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1585744045 source:c:\users\nafiz fahad\desktop\nafiz\pvbucky52\main.cpp
+	<iostream>
+	"mother.h"
+	"daughter.h"
+
+1585744026 c:\users\nafiz fahad\desktop\nafiz\pvbucky52\mother.h
+
+1585744243 c:\users\nafiz fahad\desktop\nafiz\pvbucky52\daughter.h
+
+1585744115 source:c:\users\nafiz fahad\desktop\nafiz\pvbucky52\mother.cpp
+	"mother.h"
+	"daughter.h"
+	<iostream>
+

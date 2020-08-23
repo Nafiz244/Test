@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1585595748 source:c:\users\nafiz fahad\desktop\nafiz\pvbucky46&47\birthday.cpp
+	"Birthday.h"
+	<iostream>
+
+1585595369 c:\users\nafiz fahad\desktop\nafiz\pvbucky46&47\birthday.h
+
+1585595702 source:c:\users\nafiz fahad\desktop\nafiz\pvbucky46&47\main.cpp
+	<iostream>
+	"Birthday.h"
+	"People.h"
+
+1585595181 c:\users\nafiz fahad\desktop\nafiz\pvbucky46&47\people.h
+	<string>
+	"Birthday.h"
+
+1585595412 source:c:\users\nafiz fahad\desktop\nafiz\pvbucky46&47\people.cpp
+	"People.h"
+	"Birthday.h"
+	<iostream>
+

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+    <meta name="viewport" content="width=device-width">
+    <title>Upload</title>
+    <link href="./Upload_files/student" rel="stylesheet">
+
+    
+    
+    
+    <style>
+        .drawer-controls {
+            padding-top: 10px;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <script src="./Upload_files/student(1)"></script>
+
+    
+    <div id="dvLoading">
+    </div>
+    <div id="backOpacity"></div>
+    <div class="container">
+        <br>
+        
+
+<div class="row ng-scope" ng-app="aiub" ng-controller="NotificationController" ng-init="init(&#39;/&#39;)" ng-click="DocumentClick()">
+    <div class="hidden-lg hidden-md" style="padding: 15px;">
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="topbar-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-00000000-0000-0000-0000-000000000000">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a id="navigation-toggler" class="navbar-brand logo" href="https://portal.aiub.edu/Student">
+                </a>
+
+            </div>
+            <ul class="nav navbar-nav hidden-md hidden-sm hidden-xs">
+                <li><a href="https://portal.aiub.edu/Student/Course?q=iBpjLWVwA0VqUfd1zzMKvKuQZ4HHzfR0RBG0enAqZLY%3D"><i class="glyphicon glyphicon-list" aria-hidden="true"></i>&nbsp;Courses &amp; Results</a></li>
+                <li><a href="https://portal.aiub.edu/Student/Registration?q=iBpjLWVwA0Vwz63h67B%2BnA%3D%3D"><i class="glyphicon glyphicon-flash" aria-hidden="true"></i>&nbsp;Registration</a></li>
+                <li><a href="https://portal.aiub.edu/Student/GradeReport/ByCurriculum?q=mxPlMMGCoVQ%3D"><i class="glyphicon glyphicon-certificate" aria-hidden="true"></i>&nbsp;Grade Report</a></li>
+            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-00000000-0000-0000-0000-000000000000">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div id="noti_Counter" style="display: none;"></div> <!--SHOW NOTIFICATIONS COUNT.-->
+                        <!--A CIRCLE LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
+                        <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" id="noti_Button">
+                            <div ng-click="SeeNotifications()">&nbsp;&nbsp;<span class="fa fa-bell"></span><span class="hidden-lg hidden-md hidden-sm">&nbsp;Notifications</span></div>
+                        </a>
+
+                        
+                        <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+                        <div id="notifications">
+                            <div style="width: 100%">
+                                <h3>
+                                    Notifications
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" class="pull-right" ng-click="DocumentClick()">Close</a>
+                                </h3>
+                            </div>
+                            <div class="col-md-12" style="height: 300px; overflow-y: scroll">
+                                <div ng-show="Notifications.length==0" class="row ng-hide" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998; text-align: center">
+                                    <b>Nothing to Show....</b>
+                                </div>
+                                <!-- ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">1</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">1 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">2</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by PRODIP KUMAR GHOSE [1005-1068-2]</b></small><br><small class="ng-binding">2 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">3</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">4</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">5</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">6</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">7</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">8</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">9</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By PRODIP KUMAR GHOSE [1005-1068-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">10</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By MD. NAZMUL  HOSSAIN [2001-2044-2]</b></small><br><small class="ng-binding">3 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">11</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">12</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">13</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">14</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">15</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">16</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD. NAZMUL  HOSSAIN [2001-2044-2]</b></small><br><small class="ng-binding">4 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">17</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by MD. NAZMUL  HOSSAIN [2001-2044-2]</b></small><br><small class="ng-binding">5 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">18</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New notes uploaded by DR. MAHJABIN  TASKIN [2001-2051-2]</b></small><br><small class="ng-binding">7 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">19</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">7 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications --><div ng-repeat="notification in Notifications" class="ng-scope">
+                                    <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToUrl(notification)">
+                                        <div class="row" style="margin: 5px; padding: 5px; background-color: lightblue; border-radius: 15px; color: #3b5998;">
+                                            <div class="col-md-1 col-sm-12 col-xs-12 hidden-sm hidden-xs"><small class="ng-binding">20</small></div>
+                                            <div class="col-md-11 col-sm-12 col-xs-12"><small><b class="ng-binding">New Notice Posted By MD SIYAMUL  ISLAM [1909-2002-2]</b></small><br><small class="ng-binding">7 days ago</small></div>
+                                            
+                                        </div>
+                                    </a>
+                                </div><!-- end ngRepeat: notification in Notifications -->
+                            </div>
+                            <div class="seeAll"><a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" ng-click="GoToNotification1(&#39;/Student/Notification&#39;)">See All</a></div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-cog"></span><span class="hidden-lg hidden-md hidden-sm">&nbsp;Settings</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="arrow top"></div>
+                            <li><a href="https://portal.aiub.edu/Student/Credential/ChangePassword">Change Password</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://portal.aiub.edu/Login/Logout">
+                            <span class="fa fa-sign-out"></span><span class="hidden-lg hidden-md hidden-sm">Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <p class="navbar-text navbar-right" style="padding-right: 10px;">Welcome <a href="https://portal.aiub.edu/Student/Home/Profile" class="navbar-link"><small>FAHAD, NAFIZ</small></a></p>
+                    </li>
+                </ul>
+
+
+
+
+                
+
+
+
+
+
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+    </nav>
+
+</div>
+
+<style>
+    /* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
+    #noti_Button {
+        margin: 0px 0px 0px -8px;
+    }
+
+    /* THE POPULAR RED NOTIFICATIONS COUNTER. */
+    #noti_Counter {
+        display: block;
+        position: absolute;
+        background: #E1141E;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 1px 3px;
+        margin: -8px 0 0 25px;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        z-index: 1;
+    }
+
+
+    /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+    #notifications {
+        display: none;
+        width: 430px;
+        position: absolute;
+        top: 35px;
+        right: 0;
+        background: #FFF;
+        border: solid 1px rgba(100, 100, 100, .20);
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+        z-index: 9000;
+    }
+
+
+
+    @media (max-width: 770px) {
+
+        #noti_Counter {
+            display: block;
+            position: absolute;
+            background: #E1141E;
+            color: #FFF;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 1px 3px;
+            margin: -25px 0 0 25px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            z-index: 1;
+        }
+
+        #notifications {
+            display: block;
+            width: 300px;
+            position: sticky;
+            top: 35px;
+            right: 10px;
+            background: #FFF;
+            border: solid 1px rgba(100, 100, 100, .20);
+            -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+            z-index: 9000;
+        }
+    }
+
+    /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+    /*#notifications:before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            color: transparent;
+            border: 10px solid #CCC;
+            border-color: transparent transparent #FFF;
+            margin-top: -20px;
+            margin-left: 10px;
+        }*/
+
+    h3 {
+        display: block;
+        color: #333;
+        background: #FFF;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 8px;
+        margin: 0;
+        border-bottom: solid 1px rgba(100, 100, 100, .30);
+    }
+
+    .seeAll {
+        background: #F6F7F8;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: bold;
+        border-top: solid 1px rgba(100, 100, 100, .30);
+        text-align: center;
+    }
+
+        .seeAll a {
+            color: #3b5998;
+        }
+
+            .seeAll a:hover {
+                background: #F6F7F8;
+                color: #3b5998;
+                text-decoration: underline;
+            }
+</style>
+
+
+
+<script>
+    $(document).ready(function () {
+
+        $('#noti_Button').click(function () {
+            return false;
+        });
+
+        $('#notifications').click(function () {
+            return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
+        });
+    });
+</script>
+
+        <div class="portal-body">
+            
+
+<div id="drawerExample" class="drawer dw-xs-8 dw-sm-6 dw-md-4 fold hidden-lg hidden-md" aria-labelledby="drawerExample">
+    <div class="drawer-controls">
+        <a href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#drawerExample" data-toggle="drawer" aria-foldedopen="false" aria-controls="drawerExample" class="drawer-menu-link">
+            <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="drawer-contents">
+        
+        <div class="drawer-body">
+
+
+<div class="panel-group" id="accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading2b242cd0-5feb-4348-837a-9372cb68e7e2">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse2b242cd0-5feb-4348-837a-9372cb68e7e2" aria-expanded="false" aria-controls="collapse2b242cd0-5feb-4348-837a-9372cb68e7e2" class="collapsed">
+                    <i class="fa fa-bar-chart-o"></i>&nbsp;Academics
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapse2b242cd0-5feb-4348-837a-9372cb68e7e2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2b242cd0-5feb-4348-837a-9372cb68e7e2" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Course?q=iBpjLWVwA0VqUfd1zzMKvKuQZ4HHzfR0RBG0enAqZLY%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-list"></span>&nbsp;Courses &amp; Results
+                </a>
+                <a href="https://portal.aiub.edu/Student/Registration?q=iBpjLWVwA0Vwz63h67B%2BnA%3D%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-flash"></span>&nbsp;Registration
+                </a>
+                <a href="https://portal.aiub.edu/Student/Adrop/DropApplication?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-flash"></span>&nbsp;Drop Application
+                </a>
+                <a href="https://portal.aiub.edu/Student/Section/Offered?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-list-alt"></span>&nbsp;Offered Courses
+                </a>
+                <a href="https://portal.aiub.edu/Student/Curriculum?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-tasks"></span>&nbsp;My Curriculum
+                </a>
+                <a href="https://portal.aiub.edu/Student/Accounts?q=6Pzj5wBh8sg%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-usd"></span>&nbsp;Financials
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading265c5dfe-0763-45e9-92e8-c23944b5dd53">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse265c5dfe-0763-45e9-92e8-c23944b5dd53" aria-expanded="false" aria-controls="collapse265c5dfe-0763-45e9-92e8-c23944b5dd53" class="collapsed">
+                    <i class="glyphicon glyphicon-certificate"></i>&nbsp;Grade Reports
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapse265c5dfe-0763-45e9-92e8-c23944b5dd53" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading265c5dfe-0763-45e9-92e8-c23944b5dd53" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a href="https://portal.aiub.edu/Student/GradeReport/ByCurriculum?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-certificate"></span>&nbsp; By Curriculum</a>
+                <a href="https://portal.aiub.edu/Student/GradeReport/BySemester?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-certificate"></span>&nbsp;By Semester</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingf30cb070-a7da-49de-877e-2ab4b4e011cf">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapsef30cb070-a7da-49de-877e-2ab4b4e011cf" aria-expanded="false" aria-controls="collapsef30cb070-a7da-49de-877e-2ab4b4e011cf" class="collapsed">
+                    <i class="fa fa-edit"></i> Library
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapsef30cb070-a7da-49de-877e-2ab4b4e011cf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingf30cb070-a7da-49de-877e-2ab4b4e011cf" aria-expanded="false">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Library/SearchBooks?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp;Search Book</a>
+                <a href="https://portal.aiub.edu/Student/Library/CurrentBorrows?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;Current Borrows</a>
+                <a href="https://portal.aiub.edu/Student/Library/BorrowHistory?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Borrow History</a>
+                <a href="https://portal.aiub.edu/Student/Library/Financials?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-usd"></span>&nbsp;Financial</a>
+                
+                
+                
+                <a href="https://portal.aiub.edu/Student/Library/UGC?q=6Pzj5wBh8sg%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;UGC  Digital Library (UDL) E-Resources</a>
+                <a href="https://portal.aiub.edu/Student/Library/SAGE?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;SAGE</a>
+                <a href="https://portal.aiub.edu/Student/Library/Research4Life?q=6Pzj5wBh8sg%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;Research4Life</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading19778116-d81e-4be2-8c24-9cc9f8372736">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse19778116-d81e-4be2-8c24-9cc9f8372736" aria-expanded="false" aria-controls="collapse19778116-d81e-4be2-8c24-9cc9f8372736" class="collapsed">
+                    <i class="fa fa-picture-o"></i> Others
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h4>
+        </div>
+
+        <div id="collapse19778116-d81e-4be2-8c24-9cc9f8372736" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19778116-d81e-4be2-8c24-9cc9f8372736" aria-expanded="false">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Application?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-file"></span>&nbsp;Applications</a>
+                <a href="https://portal.aiub.edu/Student/ParkingApplication" class="list-group-item"><span class="glyphicon glyphicon-file"></span>&nbsp;Parking Applications</a>
+
+                <a href="https://portal.aiub.edu/Student/Home/OfficialForms?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-download"></span>&nbsp;Download Forms</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingda09cd0b-9641-4aaa-a3f4-c9f8a23c1e6a">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc6c69a9e-ed56-4422-b000-9038e3b7701d" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapseda09cd0b-9641-4aaa-a3f4-c9f8a23c1e6a" aria-expanded="false" aria-controls="collapseda09cd0b-9641-4aaa-a3f4-c9f8a23c1e6a" class="collapsed">
+                    <i class="fa fa-table"></i> Messages
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapseda09cd0b-9641-4aaa-a3f4-c9f8a23c1e6a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingda09cd0b-9641-4aaa-a3f4-c9f8a23c1e6a" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a target="_blank" href="https://portal.aiub.edu/Message/Email" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Mail Box</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        </div>
+        
+    </div>
+
+</div>
+<div class="row">
+
+    <div id="navigation-bar" class="col-md-3 hidden-xs hidden-sm">
+
+
+<div class="panel-group" id="accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading747622f2-12a0-478d-b9af-e215f42c8cc9">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse747622f2-12a0-478d-b9af-e215f42c8cc9" aria-expanded="false" aria-controls="collapse747622f2-12a0-478d-b9af-e215f42c8cc9" class="collapsed">
+                    <i class="fa fa-bar-chart-o"></i>&nbsp;Academics
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapse747622f2-12a0-478d-b9af-e215f42c8cc9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading747622f2-12a0-478d-b9af-e215f42c8cc9" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Course?q=iBpjLWVwA0VqUfd1zzMKvKuQZ4HHzfR0RBG0enAqZLY%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-list"></span>&nbsp;Courses &amp; Results
+                </a>
+                <a href="https://portal.aiub.edu/Student/Registration?q=iBpjLWVwA0Vwz63h67B%2BnA%3D%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-flash"></span>&nbsp;Registration
+                </a>
+                <a href="https://portal.aiub.edu/Student/Adrop/DropApplication?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-flash"></span>&nbsp;Drop Application
+                </a>
+                <a href="https://portal.aiub.edu/Student/Section/Offered?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-list-alt"></span>&nbsp;Offered Courses
+                </a>
+                <a href="https://portal.aiub.edu/Student/Curriculum?q=mxPlMMGCoVQ%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-tasks"></span>&nbsp;My Curriculum
+                </a>
+                <a href="https://portal.aiub.edu/Student/Accounts?q=6Pzj5wBh8sg%3D" class="list-group-item">
+                    <span class="glyphicon glyphicon-usd"></span>&nbsp;Financials
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingbe7a6da7-e73e-49e7-8f7d-a43971106961">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapsebe7a6da7-e73e-49e7-8f7d-a43971106961" aria-expanded="false" aria-controls="collapsebe7a6da7-e73e-49e7-8f7d-a43971106961" class="collapsed">
+                    <i class="glyphicon glyphicon-certificate"></i>&nbsp;Grade Reports
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapsebe7a6da7-e73e-49e7-8f7d-a43971106961" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingbe7a6da7-e73e-49e7-8f7d-a43971106961" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a href="https://portal.aiub.edu/Student/GradeReport/ByCurriculum?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-certificate"></span>&nbsp; By Curriculum</a>
+                <a href="https://portal.aiub.edu/Student/GradeReport/BySemester?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-certificate"></span>&nbsp;By Semester</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading00dea14d-7d36-4729-9340-7b760d89ae09">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse00dea14d-7d36-4729-9340-7b760d89ae09" aria-expanded="false" aria-controls="collapse00dea14d-7d36-4729-9340-7b760d89ae09" class="collapsed">
+                    <i class="fa fa-edit"></i> Library
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapse00dea14d-7d36-4729-9340-7b760d89ae09" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading00dea14d-7d36-4729-9340-7b760d89ae09" aria-expanded="false">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Library/SearchBooks?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp;Search Book</a>
+                <a href="https://portal.aiub.edu/Student/Library/CurrentBorrows?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;Current Borrows</a>
+                <a href="https://portal.aiub.edu/Student/Library/BorrowHistory?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;Borrow History</a>
+                <a href="https://portal.aiub.edu/Student/Library/Financials?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-usd"></span>&nbsp;Financial</a>
+                
+                
+                
+                <a href="https://portal.aiub.edu/Student/Library/UGC?q=6Pzj5wBh8sg%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;UGC  Digital Library (UDL) E-Resources</a>
+                <a href="https://portal.aiub.edu/Student/Library/SAGE?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;SAGE</a>
+                <a href="https://portal.aiub.edu/Student/Library/Research4Life?q=6Pzj5wBh8sg%3D" class="list-group-item"><span class="glyphicon glyphicon-star"></span>&nbsp;Research4Life</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading1ba3d044-ed4d-410f-93c8-65d90cf60d79">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse1ba3d044-ed4d-410f-93c8-65d90cf60d79" aria-expanded="false" aria-controls="collapse1ba3d044-ed4d-410f-93c8-65d90cf60d79" class="collapsed">
+                    <i class="fa fa-picture-o"></i> Others
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h4>
+        </div>
+
+        <div id="collapse1ba3d044-ed4d-410f-93c8-65d90cf60d79" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1ba3d044-ed4d-410f-93c8-65d90cf60d79" aria-expanded="false">
+            <div>
+                <a href="https://portal.aiub.edu/Student/Application?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-file"></span>&nbsp;Applications</a>
+                <a href="https://portal.aiub.edu/Student/ParkingApplication" class="list-group-item"><span class="glyphicon glyphicon-file"></span>&nbsp;Parking Applications</a>
+
+                <a href="https://portal.aiub.edu/Student/Home/OfficialForms?q=mxPlMMGCoVQ%3D" class="list-group-item"><span class="glyphicon glyphicon-download"></span>&nbsp;Download Forms</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading36831472-f737-4564-b9b7-cede2e329c65">
+            <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionc2eda97f-d75a-433c-9a8e-c127c9971a53" href="https://portal.aiub.edu/Student/Element/Upload?q=UbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W#collapse36831472-f737-4564-b9b7-cede2e329c65" aria-expanded="false" aria-controls="collapse36831472-f737-4564-b9b7-cede2e329c65" class="collapsed">
+                    <i class="fa fa-table"></i> Messages
+                    <i class="pull-right fa fa-caret-down"></i>
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapse36831472-f737-4564-b9b7-cede2e329c65" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading36831472-f737-4564-b9b7-cede2e329c65" aria-expanded="false" style="height: 0px;">
+            <div>
+                <a target="_blank" href="https://portal.aiub.edu/Message/Email" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Mail Box</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+    <div id="main-content" class="col-md-9 col-xs-12">
+        
+
+<div class="margin5">
+        <div id="pnlError" class="alert alert-danger">
+            You are not allowed to upload documents now.
+        </div>
+    <fieldset>
+        <legend>Assignment-2</legend>
+        <fieldset>
+            <legend>Uploaded Documents</legend>
+            <table class="table table-condensed result-table">
+                <tbody><tr>
+                    <th>SL#</th>
+                    <th>File</th>
+                    <th>File Size</th>
+
+                    <th>Upload Date</th>
+                    <th>Download</th>
+                </tr>
+
+            </tbody></table>
+        </fieldset>
+        <fieldset>
+            <legend>Submitted Documents</legend>
+            <table class="table table-condensed result-table">
+                <tbody><tr>
+                    <th>SL#</th>
+                    <th>File</th>
+                    <th>File Size</th>
+
+                    <th>Upload Date</th>
+                    <th>Download</th>
+                </tr>
+
+            </tbody></table>
+<form action="https://portal.aiub.edu/Student/Element/Upload?elementID=169928&amp;returnUrl=%252fStudent%252fElement%252fUpload%253fq%253dUbPwpYItQ5pzmDwIqxh5UiOmKDrQdS0W" enctype="multipart/form-data" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="A_6VxLd0qZ7N_H6QELBC3N6UxCaBogxhsIbEmkMqUZGhzmUN3e8CErSRgWmX4dxFVL5JMX0JUa9ZlLM28KqAqF_uz6IY2doQqt6b6XcL9JQ1">                <div class="fileupload fileupload-new" data-provides="fileupload">
+                    <div class="input-group">
+                        <div class="form-control uneditable-input">
+                            <i class="glyphicon glyphicon-file fileupload-exists"></i>
+                            <span class="fileupload-preview fileUploder-ellipsis"></span>
+                        </div>
+                        <div class="input-group-btn">
+                            <a class="btn btn-default btn-file">
+                                <span class="fileupload-new"><i class="glyphicon glyphicon-folder-open"></i></span>
+                                <span class="fileupload-exists"><i class="glyphicon glyphicon-edit"></i></span>
+                                <input type="file" class="file-input" name="file1"></a>
+                        </div>
+                        <div class="input-group-btn">
+                            <input type="submit" value="Upload" class="btn btn-primary fileupload-exists">
+                        </div>
+                    </div>
+                </div>
+</form>
+        </fieldset>
+    </fieldset>
+
+</div>
+
+
+    </div>
+
+</div>
+
+        </div>
+        
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.table-details').footable({
+                "sorting": {
+                    "enabled": true
+                }
+            });
+
+            var lastScrollTop = 0;
+
+            $(window).scroll(function (event) {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop) {
+                    if (st > 15) {
+                        $(".drawer-menu-link>i").css({ opacity: .33 });
+                    }
+                } else {
+                    if (st < 15) {
+                        $(".drawer-menu-link>i").css({ opacity: 1 });
+                    }
+                }
+                lastScrollTop = st;
+                //console.log(st);
+            });
+
+
+
+        });
+    </script>
+
+    </div>
+
+
+</body></html>
